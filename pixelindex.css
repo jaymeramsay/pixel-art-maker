@@ -1,0 +1,32 @@
+body {
+  background-color: #d6c3c5;
+}
+
+#grid {
+  display: table;
+  border-spacing: 1px;
+  background-color: #d6c3c5;
+  border: 5px solid black;
+}
+
+.row {
+  align-content: center;
+  display: table-row;
+}
+
+.pixel {
+  display: table-cell;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.pen {
+  display: inline-block;
+  width: 50px;
+	height: 50px;
+	background: penColor;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+}
