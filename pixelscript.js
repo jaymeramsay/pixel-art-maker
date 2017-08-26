@@ -1,27 +1,6 @@
-let body = document.body;
 let currentColor = '#030303';
-
-//set and style a canvas
-//create a canvas ID
-//create function pixels/squares divs
-let canvas = document.getElementById('canvas');
-
-function squareClicker(ev) {
-  ev.target.style.backgroundColor = currentColor;
-  ev.target.style.borderColor = currentColor;
-}
-//create for loop to loop through squares and attach event listeners
-for (let i = 0; i < 3150; i++) {
-  let square = document.createElement('div');
-  square.className = 'square';
-  square.addEventListener('click', squareClicker); //created function outside of loop so it POINTs to the function and saves memory.
-  canvas.appendChild(square);
-}
-
-//set and style a palette
-
 //create color buttons in an array;
-let colors = [
+const colors = [
   '#ad2105',
   '#ff0000',
   '#ff5900',
@@ -54,33 +33,51 @@ let colors = [
   '#030303',
 ];
 
+//set and style a canvas
+//create a canvas ID
+//create function pixels/squares divs
+let canvas = document.getElementById('canvas');
+
+function squareClicker(ev) {
+  ev.target.style.backgroundColor = currentColor;
+  ev.target.style.borderColor = currentColor;
+}
+//create for loop to loop through squares and attach event listeners
+for (let i = 0; i < 3150; i++) {
+  let square = document.createElement('div');
+  square.className = 'square';
+  square.addEventListener('click', squareClicker); //created function outside of loop so it POINTs to the function and saves memory.
+  canvas.appendChild(square);
+}
+
+//set and style a palette
 //create palette element
 let palette = document.getElementById('palette');
 
+//create event listener for the pen element
 function penClicker(ev) {
   currentColor = ev.target.style.backgroundColor;
+  currentColorBox.style.backgroundColor = currentColor;
 }
 
 //create for loop to iterate over buttons
 //creating loops because I'll only need to use them once therefore a function isn't really necessary
 for (let i = 0; i < colors.length; i++) {
   //attach colors
-  // let pen = colors[i];
   let pen = document.createElement('div');
   pen.className = 'pen';
   pen.style.backgroundColor = colors[i];
   pen.addEventListener('click', penClicker);
   palette.appendChild(pen);
-  console.log(pen + '<<<<WE DID IT');
-  //attach event listeners
 }
-// current color indicator display
+
+// current color indicator div to display selected color
 let colorIndicator = document.createElement('div');
 colorIndicator.className = 'colorIndicator';
 palette.appendChild(colorIndicator);
 colorIndicator.append("Current Color:");
 
+//separate div for color display box
 let currentColorBox = document.createElement('div');
 currentColorBox.className = 'currentColorBox';
 colorIndicator.appendChild(currentColorBox);
-currentColorBox = currentColor
