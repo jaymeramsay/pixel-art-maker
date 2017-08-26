@@ -1,4 +1,5 @@
 let currentColor = '#030303';
+let paintNow = false;
 //create color buttons in an array;
 const colors = [
   '#ad2105',
@@ -38,17 +39,39 @@ const colors = [
 //create function pixels/squares divs
 let canvas = document.getElementById('canvas');
 
+function paintSquare(square) {
+  square.style.backgroundColor = currentColor;
+  square.style.borderColor = currentColor;
+}
+
 function squareClicker(ev) {
-  ev.target.style.backgroundColor = currentColor;
-  ev.target.style.borderColor = currentColor;
+  paintSquare(ev.target);
+  paintNow = true;
+}
+
+///create mouseenter click event
+
+function mouseEnterColor(ev) {
+  if (paintNow) {
+    paintSquare(ev.target);
+  }
+}
+
+function mouseExitColor(ev) {
+  paintNow = false;
 }
 //create for loop to loop through squares and attach event listeners
 for (let i = 0; i < 3150; i++) {
   let square = document.createElement('div');
   square.className = 'square';
-  square.addEventListener('click', squareClicker); //created function outside of loop so it POINTs to the function and saves memory.
+  square.addEventListener('mousedown', squareClicker); //created function outside of loop so it POINTs to the function and saves memory.
+  square.addEventListener('mouseenter', mouseEnterColor);
   canvas.appendChild(square);
 }
+
+//set mouseup listener
+document.addEventListener('mouseup', mouseExitColor);
+
 
 //set and style a palette
 //create palette element
