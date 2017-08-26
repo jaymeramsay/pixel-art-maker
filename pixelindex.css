@@ -37,3 +37,22 @@ body {
   -webkit-border-radius: 50px;
   border-radius: 50px;
 }
+
+.colorIndicator {
+  width: 550px;
+  height: 45px;
+  /*border: 1px solid black;*/
+  float: right;
+  border-radius: 20px 20px 20px 20px;
+  text-align: left;
+  font-size: 30px;
+}
+
+.currentColorBox {
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+  border: 3px solid black;
+  margin-right: 175px;
+  float: right;
+}
