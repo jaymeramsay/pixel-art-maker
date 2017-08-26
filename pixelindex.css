@@ -1,246 +1,39 @@
 body {
-  background-color: lightgray;
-}
-/*
-#grid {
-  display: table;
-  border-spacing: 1px;
-  background-color: #d6c3c5;
-  border: 5px solid black;
-}
-
-.row {
-  align-content: center;
-  display: table-row;
-}
-
-.pixel {
-  display: table-cell;
-  background-color: white;
-  height: 30px;
-  width: 30px;
-}*/
-div {
-
-}
-
-
-.hotpink {
-  background-color: hotpink;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.red{
-  background-color: red;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.darkorange {
-  background-color: darkorange;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.gold {
-  background-color: gold;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.yellow{
-  background-color: yellow;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.yellowgreen {
-  background-color: yellowgreen;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.green {
-  background-color: green;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.royalblue {
-  background-color: royalblue;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.blue {
-  background-color: blue;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.darkblue {
-  background-color: darkblue;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.indigo {
-  background-color: indigo;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 25px;
-  margin: 8px;
-}
-
-.purple {
-  background-color: purple;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius: 25px;
-  margin: 8px;
-}
-
-.peru {
-  background-color: peru;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-  margin: 8px;
-}
-.brown {
-  background-color: brown;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-  margin: 8px;
-}
-
-.saddlebrown{
-  background-color: saddlebrown;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-  margin: 8px;
-}
-
-.black {
-  background-color: black;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius: 25px;
-  margin: 8px;
-}
-
-.gray {
-  background-color: gray;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius: 25px;
-  margin: 8px;
-}
-
-.white {
-  background-color: white;
-  display: inline-block;
-  width: 40px;
-	height: 40px;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius: 20px;
-  margin: 8px;
-}
-
-.container {
-  border-spacing: 1px;
-  margin: 0 auto;
-  width: 792px;
-  height: 400px;
   background-color: lightgrey;
+}
 
+#canvas {
+  margin: 0 auto;
+  width: 900px;
+  height: 503px;
+  border: 1px solid black;
+  background-color: lightgrey;
+}
+
+#palette {
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 900px;
+  height: 90px;
+  border-radius: 20px 20px 20px 20px;
+  border: 1px solid brown;
+  background-color: lightpink;
 }
 
 .square {
-  line-height: 0;
-  padding: 0;
-  margin: 1px;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-color: lightsteelblue;
+  width: 10px;
+  height: 10px;
+  float: left;
+  border: 1px solid black;
+  background-color: lightpink;
 }
 
-.row {
-  height: 19px;
+.pen {
+  margin: 2px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
 }
